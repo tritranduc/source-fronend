@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
-import { Navbar, Nav, Button, Form, FormControl } from 'react-bootstrap'
+import { Navbar, Nav, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import mainIcon from '../../assets/facebook.png'
 import { AuthContext } from '../../contexts/authContext'
+import FormSearchNavbar from './FormSearchNavbar'
 
 const NavbarMenu = () => {
   var {
@@ -30,16 +31,7 @@ const NavbarMenu = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto container">
-            <Form inline className="font-weight-bolder text-white d-flex">
-              <FormControl
-                type="text"
-                placeholder="Search"
-                className="mr-sm-2"
-              />
-              <Button variant="success">Search</Button>
-            </Form>
-          </Nav>
+          <FormSearchNavbar></FormSearchNavbar>
 
           <Nav className="mr-auto container">
             <Nav.Link

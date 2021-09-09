@@ -65,7 +65,7 @@ const LoginForm = () => {
             type="password"
             name="password"
             id="Password"
-            placeholder="password placeholder"
+            placeholder="password"
             value={formData.password}
             onChange={onChangeForm}
             required

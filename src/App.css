@@ -11,7 +11,9 @@
 }
 .landing {
   position: relative;
-  background: url("./assets/anhxi.JPG") no-repeat center center/cover;
+  /* background: url("./assets/anhxi.JPG") no-repeat center center/cover; */
+  background: url("./assets/anhxi.JPG") no-repeat center center;
+  background-color: blue;
   height: 100vh;
 }
 .landing p h1 h4 {
